@@ -68,19 +68,29 @@ class FunctionInterface:
                     Agent("Eliana", f"agent_{self.agent_counter+1:03d}",
                           "Eliana is a woman who loves to eat and sleep. She is very VERY knowledgeable about ducks. She is the sweetest person on earth and would never lie or attack someone.", "female"),
                     Agent("Alice", f"agent_{self.agent_counter+2:03d}",
-                          "Alice is a woman who loves cats and crochet. She doesn't like cooking at all. She is nice to people unless they are unkind to her first.", "female")
+                          "Alice is a woman who loves cats and crochet. She doesn't like cooking at all. She is nice to people unless they are unkind to her first.", "female"),
+                    Agent("Juliette", f"agent_{self.agent_counter+3:03d}",
+                          "Juliette is a woman who loves to travel and learn new things. She is very open minded and always willing to help. She has been to every country in the world.", "female")
                 ]),
-                self.agents[-3].opinions.update({
+                self.agents[-4].opinions.update({
                     "Eliana": "He likes Eliana and thinks her cooking advices are great",
-                    "Alice": "He enjoys having conversations with her about his hobbies"
+                    "Alice": "He enjoys having conversations with her about his hobbies, he likes to fight with her about it",
+                    "Juliette": "He likes that she's always willing to help"
+                }),
+                self.agents[-3].opinions.update({
+                    "Sami": "She thinks Sami is cool and she likes his cooking",
+                    "Alice": "She's happy to have found someone who likes animals as much as she does",
+                    "Juliette": "She likes that she's always willing to help"
                 }),
                 self.agents[-2].opinions.update({
-                    "Sami": "She thinks Sami is cool and she likes his cooking",
-                    "Alice": "She's happy to have found someone who likes animals as much as she does"
+                    "Sami": "She likes hearing him talk about his hiking adventures",
+                    "Eliana": "She likes that she's a kind and calm person",
+                    "Juliette": "She likes that she's always willing to help and loves to talk about her travels"
                 }),
                 self.agents[-1].opinions.update({
-                    "Sami": "She likes hearing him talk about his hiking adventures",
-                    "Eliana": "She likes that she's a kind and calm person"
+                    "Sami": "She likes that he's always willing to help",
+                    "Eliana": "She likes that she's a kind and calm person",
+                    "Alice": "She likes that she's always willing to help"
                 }),
                 setattr(self, 'agent_counter', self.agent_counter + 3),
                 update_agent_list(),
